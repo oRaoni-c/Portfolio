@@ -1,0 +1,225 @@
+*{
+ font-family:'Montserrat' ,sans-serif;
+ border: 0;
+ margin: 0;
+ padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #FF9A6C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+
+.tags{
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+.tags:hover{
+    color: #f8cebd;
+}
+
+header a {
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    padding: 20px 80px 128px 80px;
+    position: relative;
+    animation: fadeIn 1s;
+}
+
+h1,
+h2 {
+font-weight: 600;
+font-size: 32px;
+margin-bottom: 32px;
+}
+
+.paragrafo {
+
+line-height: 150%;
+margin-bottom: 32px;
+}
+
+.botao {
+    background-color: #FF725e;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.botao:hover {
+    background-color: #f0a896;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    border-radius: 8px;
+    color: #FF725e;
+    padding: 16px 32px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.botao-transparente:hover {
+    color: #000000;
+}
+
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+#clinica li{
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+#farmacia{
+    padding: 64px 80px;
+    text-align: center;
+}
+
+#farmacia img{
+    margin: 64px auto;
+}
+
+#farmacia .paragrafo{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#duvidas{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.duvida {
+    position: relative;
+}
+
+.duvida h3{
+    border: 2px solid #FF725e;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 40px;
+}
+
+.duvida h3:hover{
+    background-color: #20202009;
+    color: #000000;
+}
+
+.duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo{
+    border-right: 1px solid #FF725e;
+    border-bottom: 1px solid #FF725e;
+    border-left: 1px solid #FF725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity:0;
+    overflow: hidden;
+    scroll-padding: smooth;
+    transition: .9s ease-in-out;
+    transition-delay: .1s;
+}
+
+.duvida.ativa .paragrafo{
+    height: 150;
+    opacity: 1;
+    padding: 24px;
+}
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 40px 40px;
+}
+
+footer img,
+footer .titulo{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+footer nav a {
+    display: block;
+    color: #263138;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #000000;
+}
+
+footer p{
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+footer p a {
+    color: #263138;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #000000;
+}
+
+#copyright {
+    background-color: #263138;
+    color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+}
+
+#copyright a {
+    color: #FF9A6C;
+}
+
+#copyright a:hover {
+    color: #f8cebd;
+}
