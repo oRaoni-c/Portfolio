@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20x;
+    margin: 10px;
+}
+.fundo {
+    background: linear-gradient(45deg, rgb(77, 92, 92), rgb(94, 173, 173), rgb(77, 92, 92)); 
+    text-align: center;
+    height: 100vh;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.calculadora {
+    border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    background-color: rgba(20, 20, 20, 0.863);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Btn, .BtnC, .BtnSim, .BtnSimR {
+    
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+    transition-duration: 1s;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(15, 15, 15, 0.87);
+    color: white;
+    cursor: pointer;
+}
+
+.Btn:hover, .BtnC:hover, .BtnSim:hover, .BtnSimR:hover {
+    transition: 1s;
+    background-color: rgba(46, 46, 46, 0.87);
+    color: rgb(255, 255, 255);
+}
+
+.BtnSimR {
+    height: 100px;
+}
+
+.BtnC {
+    width: 100px;
+}
+
+#resultado{
+    background-color: white;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    overflow: hidden;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
