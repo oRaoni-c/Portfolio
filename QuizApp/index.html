@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="box-load">
+    <div class="pre"></div>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz APP|Raoni</title>
+</head>
+
+<body onLoad="loading()">
+    <div class="content">
+        <main class="main">
+            <header class="header">
+                <a href="#" class="logo">Quiz.</a>
+
+                <nav class="navbar">
+                    <a href="#" class="active">inicio</a>
+                    <a href="html/sobre.html">Sobre</a>
+                    <a href="html/servicos.html">Serviços</a>
+                    <a href="html/contato.html">Contato</a>
+                </nav>
+            </header>
+
+            <div class="tablequiz">
+                <section class="quiz-section">
+                    <div class="quiz-box">
+                        <h1>Quiz Raoni.</h1>
+                        <div class="quiz-header">
+                            <span>Quiz Website Raoni.</span>
+                            <span class="header-score"> Score: 0 / 5</span>
+                        </div>
+
+                        <h2 class="question-text">O que significa CSS? </h2>
+
+                        <div class="option-list">
+                            <!--<div class="quest">
+                                <span>A. Cascading Style Sheets</span>
+                            </div>
+                            <div class="quest">
+                                <span>B. Colorful Style Sheets</span>
+                            </div>
+                            <div class="quest">
+                                <span>C. Creative Style Sheets</span>
+                            </div>
+                            <div class="quest">
+                                <span>D. Computer Style Sheets</span>
+                            </div>-->
+                        </div>
+
+                        <div class="quiz-footer">
+                            <span class="question-total">1 of 5 questions</span>
+                            <button class="next-btn">Continuar</button>
+                        </div>
+                    </div>
+
+                    <div class="result-box">
+                        <h2>Resultado quiz!</h2>
+                        <div class="percentage-container">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+
+                            <span class="score-text">Seus pontos 0 de 5</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="tryAgain-btn">Tente novamente</button>
+                            <button class="goHome-btn">Volte para o inicio</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="home">
+                    <div class="home-content">
+                        <h1>Teste Quiz</h1>
+                        <p>Veja o quanto você sabe sobre CSS</p>
+                        <button class="start-btn">Começar Quiz</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="popup-info">
+            <h2>Começe o quiz.</h2>
+            <span class="info">Responda as perguntas e veja o quanto você acertou.</span>
+            <div class="btn-group">
+                <button class="exit-btn">Sair</button>
+                <a href="#" class="continue-btn">Começar</a>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css">
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
