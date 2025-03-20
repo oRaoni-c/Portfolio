@@ -126,8 +126,6 @@ function questSelected(answer) {
         }
     }
 
-
-    //chapa maxima no for let i = 0//
     for (let i = 0; i < allOptions; i++) {
         optionList.children[i].classList.add('disabled');
     }
